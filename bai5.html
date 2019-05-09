@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let stars=["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe","Regulus"];
+    let name=["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major" ,"Leo"];
+    function findStar(x) {
+        let j="";
+        let flag=true;
+       for(i=0;i<stars.length;i++){
+           if(x===stars[i]){
+               j=name[i];
+               document.write(j);
+               flag=false;
+           }
+       }
+       if(flag) {
+           document.write("khong tim thay " + x);
+       }
+    }
+    let x=prompt("nhap ten ngoi sao");
+    findStar(x);
+</script>
+
+</body>
+</html>
